@@ -1,0 +1,17 @@
+//c++ code for amount calculation
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x,p,sum=0,temp=0;
+    cin>>x>>p;
+    temp=x;
+    sum=x;
+    while(temp>0)
+    {
+        sum=sum+(int)(temp*((float)(100-p))/100);
+        temp=(int)(temp*((float)(100-p))/100);
+    }
+    cout<<sum;
+    return 0;
+}
